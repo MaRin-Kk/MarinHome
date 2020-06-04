@@ -64,8 +64,8 @@
     <img src="Resource/banner5.png" alt="" style="width: 100%">
     <div class="MD_inner_div">
         <img src="Resource/head.png" alt="">
-        <span>华杉</span>
-        <button>退出登录</button>
+        <span  id="name">HNCJ</span>
+        <button id="btn">退出登录</button>
     </div>
 </div>
 
@@ -91,6 +91,16 @@
     <img src="Resource/jt.png" alt="" class="MD_right_img">
 </div>
 
+<!--获取用户名-->
+<script>
+    // var info=document.getElementById("name");
+    // var name=window.localStorage.getItem("userinfo");
+    // info.innerHTML=name;
+    var btn=document.getElementById("btn");
+    btn.onclick=function (){
+        location.href="index.html"
+    }
+</script>
 
 <footer>
     <a href="DropletService.html"><img src="Resource/nav10.png" alt=""> <span>小滴服务</span> </a>

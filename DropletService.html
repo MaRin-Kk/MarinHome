@@ -48,7 +48,19 @@
 
 <!--第二部分 图片-->
 <section class="DS_second_section">
-    <img src="Resource/banner-1.png" alt="请检查一下您的网络">
+    <img id="bannerImg" src="Resource/banner-1.png" alt="请检查一下您的网络">
+    <script>
+        var bannerImg=document.getElementById("bannerImg");
+        var imgNum=1;
+        function changeImg() {
+            imgNum++;
+            if(imgNum>3){
+                imgNum=1;
+            }
+            bannerImg.src="Resource/banner-"+imgNum+".png";
+        }
+        setInterval(changeImg,2000);
+    </script>
 </section>
 
 
